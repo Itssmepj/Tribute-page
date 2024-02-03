@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:wght@300;400;500;600&family=Roboto+Slab:wght@100..900&display=swap');
+
+* {
+  box-sizing:border-box
+}
+
+body {
+  background: linear-gradient(to right, rgb(69 88 88), black);
+  margin: 0;
+  padding: 0;
+  font-family: "Merriweather", serif;
+  color: white;
+}
+
+hr{
+  border-color: #746c6c3b;
+}
+
+/* Title */
+.heading{
+  font-size: 45px;
+  text-align: center;
+  line-height: 0.5;
+}
+
+.heading h3{
+  font-size: 20px;
+  margin-top: -10px;
+  margin-bottom: 65px;
+  font-weight: 500;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 10px 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Timeline*/
+
+.timeline-txt{
+  margin-top: 118px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.under-text{
+  text-align: center;
+  font-size: large;
+  margin: 0 190px 52px 192px;
+  line-height: 1.59;
+  font-weight: 300;
+} 
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 10px auto;
+}
+
+/* The vertical ruler*/
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: rgb(1, 10, 31);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: rgb(202, 202, 229);
+  border: 3.5px solid #127d89;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Placing the container*/
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+/* Arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 11px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  color: black;
+  background-color: rgb(168 202 221);
+  position: relative;
+  border-radius: 6px;
+}
+
+.content p{
+  font-style: italic;
+  line-height: 1.40;
+}
+
+/* Awards */
+.award-txt{
+  margin-top: 118px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.btnbelowtxt{
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 67px;
+}
+
+.btn {
+  background-color: rgb(13 134 201 / 66%);
+  border: none;
+  color: white;
+  padding: 12px 43px;
+  text-align: center;
+  font-size: 19px;
+  margin: 4px 0;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.btn:hover {opacity: 1}
+
+.btn1{
+  margin-left: 632px;  
+}
+
+.btn2{
+  margin-left: 612px;
+}
+
+.btn3{
+  margin-left: 653px;
+}
+
+.btn4{
+  margin-left: 582px;
+}
+
+.btn5{
+  margin-left: 648px;
+}
+
+.btn6{
+  margin-left: 540px;
+}
+
+.btn7{
+  margin-left: 666px;
+}
+
+.btn8{
+  margin-left: 532px;
+}
+
+.btn9{
+  margin-left: 588px;
+}
+
+.btn10{
+  margin-left: 593px;
+}
+
+.font{
+  text-align: center;
+  font-weight: 400;
+}
+
+#tribute-link{
+  color: rgb(182 159 123);
+}
+
+
